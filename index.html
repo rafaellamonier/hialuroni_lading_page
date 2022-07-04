@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/styles.css" rel="stylesheet">
+    <title>Product info</title>
+</head>
+<body>
+    <section class="main">
+        <section class="card">
+            <section class="firstColumn">
+                <img src="./assets/images/product_1.png.png" alt="foto do produto">
+            </section>
+            <section class="secondColumn">
+                <section class="header">
+                    <span class="chip">Free Shipping</span>
+                    <h2 class="title">Razer Kraken Kitty Edit Gamming Headset Quartz</h2>
+                </section>
+                <section class="price">
+                    <section>
+                        <p class="priceText">, -</p>
+                        <p class="priceOldText">, -</p>
+                    </section>
+                    <section class="sectionCounterProduct">
+                        <section class="counterProduct">
+                            <button class="buttonDecrement" type="button" onClick="counterDecrement()">-</button>
+                            <section class="containerInput">
+                                <input type="number" class="inputNumberProduct" value="1">
+                            </section>
+                            <button class="buttonIncrement" type="button" onClick="counterIncrement()">+</button>
+                        </section>
+                    </section>
+                </section>
+                <p>The offer is valid until April 3 or as long as stock lasts!</p>
+                <section class="footer">
+                    <button type="button" class="buttonAddCartMain" onClick="addToCard()">Add to cart</button>
+                    <p class="messageAddedToCard" style="display: none;">Added to Cart</p>
+                    <section class="sectionStock">
+                        <span class="sphere"></span>
+                        <p>50+ pcs, in stock</p>    
+                    </section>
+                    <section class="flexButtonsSecondary">
+                        <button class="firstButton">
+                            <apan class="containerIconCart">
+                                <img src="./assets/images/cartIcon.svg" alt="Icone de um carrinho">
+                            </apan>
+                            Add to cart
+                        </button>
+                        <button class="firstButton">
+                            <apan class="containerIconHearth">
+                                <!-- icon  -->
+                                <img src="./assets/images/heartIcon.svg" alt="Icone de coração">
+                            </apan>
+                            Add to wishilist
+                        </button>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script src="./scripts/script.js" ></script>
+</body>
+</html>

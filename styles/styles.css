@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100&display=swap');
+
+body {
+    --white-default: #ffff;
+    --background-default: #EEF2F9;
+    --color-primary-text: #191847;
+    --primary-color: #1C57EE;
+    --secundary-color: #4787E9;
+    --secondary-color: #00D98B;
+    --gray-default: #C9C9DA;
+}
+
+body, * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background: var(--background-default);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: var(--white-default);
+    width: 70%;
+    height: 661px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 6px 25px 3px rgba(0,0,0,0.20); 
+    box-shadow: 0px 6px 25px 3px rgba(0,0,0,0.20);
+    display: flex;
+    padding: 80px 113px 60px 58px;
+}
+
+.chip {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white-default);
+    background-color: var(--color-primary-text);
+    padding: 5px 10px;
+    width: 112px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 80%;
+    font-size: 2em;
+    margin-top: 10px;
+    color: var(--color-primary-text);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.price section .priceText {
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: var(--color-primary-text);
+    margin-top: 32px;
+}
+
+.price section .priceOldText {
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: regular;
+    color: var(--color-primary-text)
+}
+
+.price section .priceOldText::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: var(--color-primary-text);
+}
+
+.counterProduct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttonDecrement,
+.buttonIncrement {
+    font-family: 'Poppins', sans-serif;
+    width: 26px;
+    height: 26px;
+    border: none;
+    outline: none;
+    background-color: var(--secundary-color);
+    border-radius: 5px;
+    color: var(--background-default);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inputNumberProduct {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+}   
+
+.containerInput {
+    width: 99px;
+    height: 29px;
+    border: 3px solid var(--gray-default);
+    outline: none;
+    border-radius: 10px;
+}
+
+
+
